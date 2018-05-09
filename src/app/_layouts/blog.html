@@ -8,23 +8,34 @@ layout: index
 		<div class="row no-gutters">
 			<div class="col-12 o-column">
 
-				{% include _page/page-top.html %}
+				{% if page.page-top %}
+
+					{% include _page/page-top.html %}
+
+				{% endif %}
 
 				<section id="o-page-main" class="o-page-main">
 					<div class="o-page-main__wrapper">
 
 						<div class="container">
 							<div class="row">
+
+								{% if page.sidebar %}
+
 								<div class="col-12 col-md-9 o-column">
-
 									{{ content }}
-
 								</div>
 								<div class="col-12 col-md-3 o-column">
-
 									{% include _page/sidebar.html %}
-
 								</div>
+
+								{% else %}
+
+								<div class="col-12 o-column">
+									{{ content }}
+								</div>
+
+								{% endif %}
 
 							</div>
 						</div>
