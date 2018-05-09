@@ -10,14 +10,14 @@ page-top: on
 <section id="o-p-blog" class="o-p-blog style-5">
 	<div class="o-p-blog__wrapper">
 
-		{% for post in site.posts %}
-
 		<div class="row">
-			<div class="col-12 o-column">
+			{% for post in site.posts %}
+
+			<div class="col-12 col-sm-6 o-column">
 				<div class="card-deck">
 					<div class="card">
 						<figure class="o-p-blog__thumbnail o-ratio--16-9">
-							<img class="card-img-top lazyload" data-src="images/blog-post-1.jpg" data-srcset="images/blog-post-1@2x.jpg 576w, images/blog-post-1.jpg 1200w" alt="Thumbnail"/>
+							<img class="card-img-top lazyload" data-src="images/blog-post-1.jpg" data-srcset="blog-post-1@2x.jpg 576w, images/blog-post-1.jpg 1200w" alt="Thumbnail"/>
 						</figure>
 						<div class="card-body">
 							<div class="o-p-blog__title">
@@ -33,9 +33,9 @@ page-top: on
 					</div>
 				</div>
 			</div>
+
+			{% endfor %}
+
 		</div>
-
-		{% endfor %}
-
 	</div>
 </section>

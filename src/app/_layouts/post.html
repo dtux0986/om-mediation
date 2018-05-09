@@ -1,55 +1,14 @@
 ---
-layout: index
+layout: blog
 sidebar: on
-page-top: on
 ---
 
-<section id="site-content" class="site-content">
-
-	<div class="container-fluid o-no-padding">
-		<div class="row no-gutters">
-			<div class="col-12 o-column">
-
-				{% if page.page-top %}
-
-					{% include _page/page-top.html %}
-
-				{% endif %}
-
-				<section id="o-page-main" class="o-page-main">
-					<div class="o-page-main__wrapper">
-
-						<div class="container">
-							<div class="row">
-
-								{% if page.sidebar %}
-
-								<div class="col-12 col-md-9 o-column">
-									{{ content }}
-								</div>
-								<div class="col-12 col-md-3 o-column">
-									{% include _page/sidebar.html %}
-								</div>
-
-								{% else %}
-
-								<div class="col-12 o-column">
-									{{ content }}
-								</div>
-
-								{% endif %}
-
-							</div>
-						</div>
-
-					</div>
-				</section><!--page-main-->
-
-				{% include _page/page-bottom.html %}
-
-			</div>
+<article class="hentry">
+	<div class="row no-gutters">
+		<div class="col-12 o-column">
+			<h1>{{ page.title }}</h1>
+			{{ content }}
 		</div>
 	</div>
-
-</section>
+</article>
 <!--!site-content-->

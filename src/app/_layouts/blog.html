@@ -8,7 +8,7 @@ layout: index
 		<div class="row no-gutters">
 			<div class="col-12 o-column">
 
-				{% if page.page-top %}
+				{% if layout.page-top or page.page-top %}
 
 					{% include _page/page-top.html %}
 
@@ -20,7 +20,7 @@ layout: index
 						<div class="container">
 							<div class="row">
 
-								{% if page.sidebar %}
+								{% if layout.sidebar or page.page-top %}
 
 								<div class="col-12 col-md-9 o-column">
 									{{ content }}
