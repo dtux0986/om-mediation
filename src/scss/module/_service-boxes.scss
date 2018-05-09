@@ -1,0 +1,132 @@
+/**
+ * Service Boxes
+ * -------------------------------------------------- */
+
+.o-service-box {
+
+  /* Common Styles */
+  i {
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style-type: none;
+    }
+  }
+
+  ul.block-list {
+    li.block-group {
+
+      ul {
+        li {
+          .block {
+            padding: 44px 0;
+          }
+        }
+
+        &:first-child {
+          .block {
+            padding-top: 0;
+          }
+        }
+
+        &:last-child {
+          .block {
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.is-center {
+    text-align: center;
+  }
+
+  &.is-left {
+    text-align: left;
+  }
+
+  &.is-right {
+    text-align: right;
+  }
+
+  &.is-icon-box {
+
+  }
+
+  &.is-ui-list {
+
+  }
+
+  &.is-ui-background {
+
+  }
+
+  &.is-square {
+
+  }
+
+  &.is-ui-border {
+    ul.block-list {
+
+      li.block-group {
+        border-bottom: 1px solid #f0f0f0;
+
+        ul {
+          li {
+            &:last-child {
+              &.o-column {
+                border-right: none;
+              }
+            }
+          }
+        }
+
+        .o-column {
+          border-right: 1px solid #f0f0f0;
+        }
+
+        &:first-child {
+          .o-column {
+
+          }
+        }
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+  }
+
+  /* Style 01 */
+  &.style-1 {
+    ul.block-list {
+      li.block-group {
+        .block {
+
+          figure {
+            img {
+              max-width: 100px;
+            }
+          }
+
+          i {
+            font-size: 72px;
+          }
+
+          .c-summary {
+            padding: 0 5%;
+          }
+
+        }
+      }
+    }
+  }
+}

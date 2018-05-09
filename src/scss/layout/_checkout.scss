@@ -1,0 +1,130 @@
+/**
+ * Checkout
+ * -------------------------------------------------- */
+
+/* Overall on Checkout Page*/
+.o-checkout {
+  .o-page-header {
+    &__wrapper {
+      background-color: $primary;
+      color: $white;
+    }
+    &__title {
+      h1 {
+        color: $white;
+        &:before {
+          @extend .o-underline--1;
+          bottom: 0.25rem; /*4px*/
+          background-color: $yellow;
+        }
+      }
+    }
+    &__caption {
+      h2 {
+        color: $white;
+      }
+    }
+  }
+}
+
+/* Checkout Section */
+.o-checkout {
+  .o-p-checkout {
+    form {
+      &::after {
+        display: block;
+        clear: both;
+        content: ""; 
+      }
+
+      > button {
+        float: right;
+        margin-top: 40px;
+      }
+    }
+    /* Payment Method */
+    &__payment {
+      margin-bottom: 52px;
+      .o-headline {
+        h3 {
+          margin-bottom: 26px;
+        }
+      }
+      ul {
+        li {
+          display: inline-block;
+          input {
+            display: none;
+          }
+          label {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    /* Create Account */
+    &__account {
+      margin-top: 50px;
+      .o-hr {
+        margin-bottom: 31px;
+      }
+      .o-headline {
+        h3 {
+          margin-bottom: 18px;
+        }
+        p {
+          margin-bottom: 33px;
+          a {
+            font-weight: 800; 
+            color: $yellow;
+            margin-left: 14px;
+          }
+        }
+      }
+      &--title {
+        h4 {
+          font-family: "Muli",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+          font-weight: 800;
+          margin-bottom: 31px;
+        }
+      }
+      &--personal,
+      &--create {
+        margin-bottom: 60px;
+      }
+
+      &--personal {
+        @media (min-width: 992px) {
+          margin-right: 1.875rem; /*30px*/
+        }
+      }
+      &--create {
+        @media (min-width: 992px) {
+          margin-left: 1.875rem; /*30px*/
+        }
+      }
+
+      &--form {
+        background-color: rgba($primary, .05);
+        padding: 2.5rem; /*40px*/
+        padding-top: 32px;
+        h6 {
+          font-family: "Muli",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+          font-weight: 800; 
+          margin-bottom: 14px;         
+        }
+        p {
+          margin-bottom: 22px;
+        }
+      }
+
+      &--email,
+      &--first-name,
+      &--user,
+      &--password {
+        margin-bottom: 1.5rem; /*24px*/
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+---
+layout: index
+---
+
+<section id="site-content" class="site-content">
+
+	<div class="container-fluid o-no-padding">
+		<div class="row no-gutters">
+			<div class="col-12 o-column">
+
+				{% include _page/page-top.html %}
+
+				<section id="o-page-main" class="o-page-main">
+					<div class="o-page-main__wrapper">
+
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-md-9 o-column">
+
+									{{ content }}
+
+								</div>
+								<div class="col-12 col-md-3 o-column">
+
+									{% include _page/sidebar.html %}
+
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</section><!--page-main-->
+
+				{% include _page/page-bottom.html %}
+
+			</div>
+		</div>
+	</div>
+
+</section>
+<!--!site-content-->

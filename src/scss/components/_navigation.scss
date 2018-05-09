@@ -1,0 +1,71 @@
+/**
+ * NAVIGATION
+ * -------------------------------------------------- */
+
+/* Top Navigation */
+.o-top-navigation {
+  &__wrapper {
+
+  }
+
+  .o-top-menu {
+
+    .nav {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+/* Main Navigation */
+.o-main-navigation {
+
+  .o-main-navigation__wrapper {
+
+    @media (max-width: 767px) {
+      padding: 30px 0;
+    }
+  }
+
+  .o-main-menu {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  nav.site-navigation--main {
+    min-height: 6.25rem; /*100px*/
+  }
+
+  ul.navbar-nav {
+    li.nav-item {
+      margin: 0 1.25rem 0 0;
+
+      a.nav-link {
+        font-weight: 700;
+      }
+    }
+    li.dropdown {
+      .dropdown-menu {
+
+        a.dropdown-item {
+
+        }
+      }
+    }
+  }
+}
+
+/* Footer Navigation */
+.o-footer-navigation {
+
+  &__wrapper {
+
+  }
+
+  .o-footer-menu {
+    .nav {
+      flex-direction: row-reverse;
+    }
+  }
+}
+

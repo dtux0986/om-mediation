@@ -1,0 +1,268 @@
+/**
+ * Product Listing
+ * -------------------------------------------------- */
+
+/* Overall on Product Listing Pages */
+.archive {
+  .o-page-header__wrapper {
+    padding: 102px 0px;
+  }
+  .o-page-header__title h1:before {
+    @extend .o-underline--1;
+    bottom: 4px;
+  }
+  .o-page-header__caption {
+    h2 {
+      line-height: 30px;
+    }
+  }
+  &.blog .o-page-content {
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+
+  .o-themes-l-premium, .o-themes-l-free {
+    margin-bottom: 53px; 
+  }
+}
+
+.o-product-listing {
+  .o-page-header {
+    &__wrapper {
+
+    }
+    &__title {
+      h1 {
+        &:before {
+          @extend .o-underline--1;
+          bottom: 0.25rem; /*4px*/
+          background-color: $yellow;
+        }
+      }
+    }
+  }
+}
+
+/* Free Themes Listing */
+.o-themes-l-free {
+  .o-page-header {
+
+    &__wrapper {
+      background-color: rgba($primary, .05);
+    }
+
+    &__title {
+      h1 {
+
+      }
+    }
+  }
+
+  /* Free Themes Listing */
+  .o-g-themes--free {
+    .o-g-themes {
+      &__wrapper {
+        >.container {
+          >.row {
+            > div {
+              padding-bottom: 53px;
+            }            
+            &:last-child {              
+              > div {
+                padding-bottom: 0px;
+              }
+            }
+          }
+        }
+      }
+
+      /* Block */
+      &__block {
+        &--left {
+          @media (min-width: 992px) {
+            margin-right: 1.875rem; /*30px*/
+          }
+        }
+        &--right {
+          @media (min-width: 992px) {
+            margin-left: 1.875rem; /*30px*/
+          }
+        }
+        &--left,
+        &--right {
+          @media (max-width: 767px) {
+            margin: 0;
+          }
+        }
+      }
+
+      /* Thumbnail */
+      &__thumbnail {
+        background-color: rgba($primary, .05);
+        padding: 55px 55px 0;
+        margin-bottom: 32px;
+      }
+
+      /* Title */
+      &__title {
+        h3 {
+          font-size: 1.875rem; /*30px*/
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+}
+
+/* Premium Themes Listing */
+.o-themes-l-premium {
+  .o-page-header {
+
+    &__wrapper {
+      background-color: $primary;
+      color: $white;
+    }
+    &__title {
+      h1 {
+        color: $white;
+      }
+    }
+    &__caption {
+      h2 {
+        color: $white;
+      }
+    }
+  }
+
+  /* Premium Group Themes Override */
+  .o-g-themes--premium {
+    .o-g-themes {
+      &__wrapper {
+        >.container {
+          >.row {
+            > div {
+              padding-bottom: 53px;
+            }            
+            &:last-child {              
+              > div {
+                padding-bottom: 0px;
+              }
+            }
+          }
+        }
+      }
+
+      /* Block */
+      &__block {
+        &--left {
+          @media (min-width: 992px) {
+            margin-right: 1.875rem; /*30px*/
+          }
+        }
+        &--right {
+          @media (min-width: 992px) {
+            margin-left: 1.875rem; /*30px*/
+          }
+        }
+      }
+
+      /* Tagline */
+      &__tagline {
+        text-align: center;
+        margin-bottom: 9px;
+        font-family: "Heebo",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+        min-height: 27px;
+        > p {
+          margin-bottom: 0px;
+        }
+      }
+
+      /* Thumbnail */
+      &__thumbnail {
+        background-color: #fecc45;
+        padding: 46px 55px 0;
+        margin-bottom: 31px;
+        @media (max-width: 768px) {
+          padding: 46px 35px 0px;
+        }
+      }
+
+      /* Bottom */
+      &__bottom {
+        padding: 0 11% 0 11%;
+      }
+
+      /* Title */
+      &__title {
+        h3 {
+          font-size: 1.875rem; /*30px*/
+        }
+      }
+
+      /* Price */
+      &__price {
+        p {
+          font-size: 1.875rem; /*30px*/
+        }
+      }
+
+      /* Caption */
+      &__caption {
+        margin-top: -6px;
+      }
+    }
+  }
+}
+
+/* Premium Apps Listing*/
+.o-apps-l-premium {
+
+  .o-page-header {
+
+    &__wrapper {
+
+    }
+    &__title {
+      h1 {
+        &:before {
+          background-color: $white;
+        }
+      }
+    }
+    &__caption {
+      h2 {
+
+      }
+    }
+  }
+
+  .o-g-apps--premium {
+    .o-g-apps {
+      &__block {
+        &--left {
+
+        }
+      }
+    }
+  }
+}
+
+
+.o-g-themes__block {
+  &--left {
+    @media (min-width: 992px) {
+      margin-right: 1.875rem; /*30px*/
+    }
+  }
+  &--right {
+    @media (min-width: 992px) {
+      margin-left: 1.875rem; /*30px*/
+    }
+  }
+  &--left,
+  &--right {
+    @media (max-width: 767px) {
+      margin: 0;
+    }
+  }
+}

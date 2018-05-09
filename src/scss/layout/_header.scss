@@ -1,0 +1,23 @@
+/**
+ * Header
+ * -------------------------------------------------- */
+
+header.site-header {
+
+  .o-header-top {
+    &__wrapper {
+      background-color: $primary;
+
+    }
+  }
+
+  .o-header-main {
+    &__wrapper {
+      background-color: $primary;
+    }
+  }
+
+  .o-header-bottm {
+
+  }
+}

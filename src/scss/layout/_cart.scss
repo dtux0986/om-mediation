@@ -1,0 +1,158 @@
+/**
+ * Cart
+ * -------------------------------------------------- */
+
+/* Cart Section */
+.o-cart {
+  .o-p-cart {
+    &__wrapper {
+      > .row:first-child {
+        margin-bottom: 18px;
+      }
+      > .row:last-child {
+        margin-top: 32px;
+        padding-bottom: 60px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #f5f5f5;
+      }
+      .o-p-cart__invoice {
+        margin-top: -12px;
+      }
+    }
+
+    /* Table */
+    &__table {
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid #f5f5f5;
+      color: $primary;
+
+      &--product ,
+      &--additional {
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 767px) {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+
+      &--product {
+        padding: 32px 0 32px; /*40px 0*/
+        border-bottom: 1px solid #f5f5f5;
+      }
+      &--additional {
+        padding: 2.5rem 0; /*40px 0*/
+      }
+
+      &--bar,
+      &--row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+        @media (max-width: 767px) {
+          flex-direction: column;
+        }
+
+        > div {
+          flex: 1 1 12.5%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          @media (max-width: 767px) {
+            flex: 1 1 auto;
+          }
+        }
+
+        .name {
+          flex: 1 1 50%;
+          font-weight: 800;
+          text-align: left;
+          a {
+            text-decoration: underline;
+          }
+          @media (max-width: 767px) {
+            flex: 1 1 auto;
+          }
+        }
+      }
+
+      &--bar {
+        margin-bottom: 0.875rem; /*14px*/
+
+        > div {
+          font-weight: 800;
+        }
+
+        @media (max-width: 767px) {
+          text-align: left;
+        }
+      }
+      &--row {
+        .price {
+          font-weight: 800;
+        }
+        @media (max-width: 767px) {
+          text-align: right;
+        }
+      }
+    }
+
+    /* Coupon */
+    &__coupon {
+      &--action {
+        margin-top: 22px;
+        display: flex;
+        flex-direction: row;
+
+        input {
+          margin-right: 0.625rem; /*10px*/
+        }
+      }
+    }
+
+    /* Invoice */
+    &__invoice {
+
+      &--subtotal,
+      &--total {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        h6 {
+          margin-bottom: 0;
+          font-family: "Muli",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+          font-weight: 800;
+        }
+
+        p {
+          font-size: 2.25rem; /*36px*/
+          font-weight: 800;
+          margin-bottom: 0px;
+        }
+      }
+
+      &--subtotal {
+        border-bottom: 1px solid $gray-100;
+        padding-bottom: 13px;
+        margin-bottom: 12px;
+        p {
+          color: $primary;
+        }
+      }
+      &--total {
+        strong {
+          font-weight: 800;
+        }
+        p {
+          color: $green;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
