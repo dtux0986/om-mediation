@@ -4,6 +4,7 @@
 
 header.site-header {
 
+  /* Overall */
   .o-header-top {
     &__wrapper {
       background-color: $primary;
@@ -17,7 +18,30 @@ header.site-header {
     }
   }
 
-  .o-header-bottm {
+  .o-header-bottom {
+
+  }
+
+  &.style-1 {
+
+  }
+
+  &.style-2 {
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    z-index: 9;
+  }
+
+  &.style-3 {
+
+  }
+
+  &.style-4 {
+
+  }
+
+  &.style-5 {
 
   }
 }
